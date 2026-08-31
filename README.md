@@ -43,6 +43,7 @@
 低能力学生可以依靠稳定母版、半结构化模板、功能菜单和必要教师协助保住成品；高能力学生一完成 BASE 就继续自由拓展。
 
 核心政策：
+
 - `docs/OUTCOME_FIRST_AND_SCAFFOLDING_POLICY.md`
 - `docs/CHALLENGE_POOL_SYSTEM_V1.md`
 
@@ -56,11 +57,13 @@
 本项目不按“刚好40/45分钟做完”设计，而要求主作品明显提前完成：
 
 ### 小学
+
 - 25–30分钟左右：锁定展示级 BASE；
 - 30–40分钟：试玩、找问题、修改、收口；
 - 40分钟以后：Challenge / Open Creation。
 
 ### 初中
+
 - 30–35分钟左右：锁定展示级 BASE；
 - 35–45分钟：测试、用户反馈、判断、修改、收口；
 - 45分钟以后：更复杂功能、用户测试与开放创造。
@@ -142,7 +145,7 @@
 
 因此当前阶段是：
 
-> **EVIDENCE-BASED CURRICULUM DESIGN → SCHOOL LAUNCH → REAL-CLASSROOM ITERATION**
+> **MOTHER TEMPLATE VALIDATION → PRODUCTIZATION → SCHOOL DELIVERY**
 
 ## 第一批课程设计证据
 
@@ -161,46 +164,84 @@
 - `docs/CURRICULUM_REVERSE_ENGINEERING_CASE_MATRIX_V1.md`
 - `docs/CURRICULUM_RND_AND_SCHOOL_LAUNCH_STRATEGY.md`
 
-## 当前母版策略
+## 核心母版库
 
 16节课不是16套完全不同技术。
 
-当前方向是压缩成少数稳定母版引擎，再通过主题、规则、内容和 Challenge 组合成不同课程。
+课程压缩成少数稳定母版引擎，再通过主题、规则、内容和 Challenge 组合成不同课程。
 
-已真实 Known-Good：
+内部入口：
 
-- 游戏母版；
-- 学习平台母版。
+`mother-templates/README.md`
 
-下一优先验证：
+### 已进入正式产品化
 
-- 互动故事母版；
-- 兴趣馆/知识产品母版；
-- 工作台/记录/校园工具母版。
+- `mother-templates/M1-game/README.md` — 游戏 / 规则母版，T1 FULL STRONG PASS；
+- `mother-templates/M2-learning/README.md` — 学习平台 / 闯关母版，T2 STRONG PASS。
 
-每套母版最终都需要：
+两套都已经定义：
 
-- BASE；
+- DISPLAY-SAFE BASE；
 - FALLBACK；
-- THEME_OPTIONS；
-- RULE_OPTIONS；
-- WOW_OPTIONS；
-- RECOVERY；
-- Quick Win Challenge；
-- Builder Challenge；
-- Open Creator；
-- SHOWCASE。
+- Theme / Feature / Wow Options；
+- Recovery；
+- Challenge；
+- 教师追问；
+- Showcase Standard；
+- Known Failure / R&D Notes。
+
+### 待真实验证
+
+- M3：互动故事 / 分支世界；
+- M4：兴趣馆 / 知识产品；
+- M5：工作台 / 记录 / 校园工具。
+
+验证协议：
+
+`docs/MOTHER_TEMPLATE_VALIDATION_PROTOCOL_V1.md`
+
+最小实测速查卡：
+
+`docs/MOTHER_TEMPLATE_M3_M4_M5_RUN_CARDS.md`
+
+产品化目标规格：
+
+`docs/MOTHER_TEMPLATE_PRODUCTIZATION_SPEC_V0.1.md`
+
+每个母版只需跑：
+
+> **首版 + 两次修改 + 一次 Challenge**
+
+记录真实耗时、故障、自修、是否碰代码和最终试玩结果即可，不要求手写长测试报告。
+
+## 普通教师交付方法
+
+共享教师方法已经形成：
+
+`docs/TEACHER_DELIVERY_PLAYBOOK_V0.1.md`
+
+核心统一为：
+
+> **先看成品 → 快速第一版 → BASE DEADLINE → 能力修改 → Challenge → 稳定收口。**
+
+教师救援按：
+
+> 不帮 → 追问 → 给选项 → 给句式 → FALLBACK → 最后才局部代操作
+
+逐级增加。
+
+如果同一问题多人出现，优先全班统一救援，不逐台处理。
 
 ## 当前下一执行
 
-1. 继续逆向和结构化国内外真实课程/课堂案例；
-2. 逐一验证尚未 Known-Good 的核心母版；
-3. 对小学每课验证 BASE 是否能在25–30分钟预算内稳定完成；
-4. 对初中每课验证 BASE 是否能在30–35分钟预算内稳定完成；
-5. 为核心母版建立 FALLBACK、Recovery 和 Challenge Pool；
-6. 形成教师手册、学生任务卡和展示素材；
+1. 不再重复验证 M1/M2；
+2. 按 `MOTHER_TEMPLATE_M3_M4_M5_RUN_CARDS.md` 各跑一次 M3/M4/M5；
+3. 将真实结果记录为 Strong Pass / Pass with Guardrails / Fail；
+4. 只对通过母版建立正式 `mother-templates/` 资产；
+5. 把 M1–M5 映射回小学/初中16课时 V0.2；
+6. 形成教师手册、学生任务卡、FALLBACK、课堂恢复与展示素材；
 7. 做内部完整走课；
-8. 达到可交付 Gate 后进入学校；
+8. 达到可交付 Gate 后直接进入学校；
 9. 从真实授课持续收集教师/学生/学校反馈并版本化迭代。
 
 ## 商业交付与壁垒
