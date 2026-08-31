@@ -7,14 +7,15 @@
 1. 当前 GitHub `main`；
 2. `README.md`；
 3. `docs/OUTCOME_FIRST_AND_SCAFFOLDING_POLICY.md`；
-4. `docs/CURRICULUM_RND_AND_SCHOOL_LAUNCH_STRATEGY.md`；
-5. `docs/CURRICULUM_DESIGN_EVIDENCE_SYNTHESIS_V1.md`；
-6. `docs/CURRICULUM_REVERSE_ENGINEERING_CASE_MATRIX_V1.md`；
-7. `docs/DECISIONS.md`；
-8. 微信小程序教育平台 T1/T2 真实账号结果；
-9. `docs/PRODUCT_STRATEGY.md`；
-10. `docs/COMPETITIVE_RESEARCH.md`；
-11. 各 `courses/<course>/` 最新产物。
+4. `docs/STANDARD_PERIOD_AND_EXTENSION_POLICY.md`；
+5. `docs/CURRICULUM_RND_AND_SCHOOL_LAUNCH_STRATEGY.md`；
+6. `docs/CURRICULUM_DESIGN_EVIDENCE_SYNTHESIS_V1.md`；
+7. `docs/CURRICULUM_REVERSE_ENGINEERING_CASE_MATRIX_V1.md`；
+8. `docs/DECISIONS.md`；
+9. 微信小程序教育平台 T1/T2 真实账号结果；
+10. `docs/PRODUCT_STRATEGY.md`；
+11. `docs/COMPETITIVE_RESEARCH.md`；
+12. 各 `courses/<course>/` 最新产物。
 
 聊天记录只能补背景，不能覆盖仓库事实。
 
@@ -46,26 +47,58 @@
 
 详见：`docs/OUTCOME_FIRST_AND_SCAFFOLDING_POLICY.md`。
 
-### 2.2 不是传统编程课
+### 2.2 标准课时之前必须锁定成果
+
+课程默认适配国内义务教育标准课时：
+
+- 小学：40 分钟；
+- 初中：45 分钟。
+
+但正式课程不能按“刚好 40/45 分钟完成”设计。
+
+硬要求：
+
+> **BASE / FALLBACK 展示级成品必须在标准课时结束前明显完成，并留出试玩、修复、收口和展示缓冲。**
+
+建议时间预算：
+
+- 小学 BASE 目标约 25–30 分钟完成；
+- 初中 BASE 目标约 30–35 分钟完成；
+- 标准课时剩余部分用于试玩、判断、修改、反馈与收口；
+- 50/60/90 分钟或双课时的额外时间只用于 Challenge / Open Creation，不得成为完成 BASE 的必要条件。
+
+因此每节核心课必须同时设计：
+
+1. `DISPLAY-SAFE BASE`；
+2. 标准课时内的能力深化；
+3. `CHALLENGE POOL / OPEN CREATION` 延长拓展。
+
+目标是：
+
+> **40 分钟能完整交付，60 分钟不水，90 分钟仍然有创造空间。**
+
+详见：`docs/STANDARD_PERIOD_AND_EXTENSION_POLICY.md`。
+
+### 2.3 不是传统编程课
 - 不以 Scratch / Python / C++ 语法为主线；
 - 不要求学生先学编程；
 - 不要求老师成为程序员；
 - 不把课堂时间浪费在环境配置、语法和复杂 Debug。
 
-### 2.3 AI 原生创造
+### 2.4 AI 原生创造
 核心循环：
 
 > **想法 → 自然语言 → AI 第一版 → 试玩/判断 → 修改 → 验证 → 用户反馈 → 再迭代。**
 
 复杂技术尽量封装在 AI、模板和平台之后。
 
-### 2.4 技术难度 2/10，作品观感 8/10
+### 2.5 技术难度 2/10，作品观感 8/10
 若一个项目只有掌握大量技术细节才能稳定完成，即使很酷也不符合当前方向。
 
-### 2.5 作品是明线，能力是暗线
+### 2.6 作品是明线，能力是暗线
 暗线包括：表达需求、提问、任务拆解、判断、验证、迭代、审美、信息甄别、合作和负责任使用 AI。
 
-### 2.6 AI 说完成不等于完成
+### 2.7 AI 说完成不等于完成
 必须坚持：
 
 > **生成 → 实际试玩/使用 → 发现问题 → 再描述 → 验证修复。**
@@ -164,7 +197,10 @@
 ## 8. 设计每节课前的淘汰测试
 
 出现以下任一情况，默认需要重新设计：
-- 基础学生即使用模板和支架，仍难以在课内拿到展示级成品；
+- 基础学生即使用模板和支架，仍难以在标准课时结束前明显提前拿到展示级成品；
+- 小学 BASE 通常需要接近 40 分钟、初中 BASE 通常需要接近 45 分钟才能完成；
+- 只有把课拉长到 60 分钟才能形成完整作品；
+- 快学生做完后只能等待，没有 Challenge / Open Creation；
 - 保底作品明显廉价、简陋或看起来像“差生版”；
 - 多名学生掉队时只能靠老师逐个长时间救援；
 - 老师必须会写或解释大量代码；
@@ -187,12 +223,13 @@
 2. 优先研究 8–16 周课程中支架如何逐步撤掉、学生作品如何升级、自由度如何增加；
 3. 形成小学高年级学生能力阶梯、作品难度阶梯和教师支架，同时确保每一级都有展示级保底成果；
 4. 形成初中学生能力阶梯、作品难度阶梯和教师支架；
-5. 修订 Wow Demo V0.x；
-6. 设计小学高年级、初中正式学期课程 V0.x；
-7. 完成内部走课、教师手册、学生材料、作品标准与故障恢复；
-8. 达到 `CURRICULUM_RND_AND_SCHOOL_LAUNCH_STRATEGY.md` 内部发布 Gate 后直接进入学校授课；
-9. 从真实授课持续收集教师/学生/学校反馈，版本化迭代；
-10. 不新增无必要的前置实验门槛。
+5. 把所有课次按 `STANDARD_PERIOD_AND_EXTENSION_POLICY.md` 重新校准时间盒；
+6. 修订 Wow Demo V0.x；
+7. 设计/修订小学高年级、初中正式学期课程 V0.x；
+8. 完成内部走课、教师手册、学生材料、作品标准与故障恢复；
+9. 达到 `CURRICULUM_RND_AND_SCHOOL_LAUNCH_STRATEGY.md` 内部发布 Gate 后直接进入学校授课；
+10. 从真实授课持续收集教师/学生/学校反馈，版本化迭代；
+11. 不新增无必要的前置实验门槛。
 
 ## 10. 商业与渠道约束
 
