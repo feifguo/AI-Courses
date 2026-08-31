@@ -1,6 +1,6 @@
 # 课程实施状态 — 2026-09-01
 
-状态：CURRENT IMPLEMENTATION FACT
+状态：CURRENT IMPLEMENTATION FACT / INTERNAL AUDIT SYNCED
 
 本文件区分三种状态：
 
@@ -16,6 +16,8 @@
 - 初中：`courses/middle-school/SEMESTER_16_LESSONS_V0.3.md`
 - Wow Demo：`courses/demo/WECHAT_WOW_DEMO_V0.2_STANDARD_PERIOD.md`
 
+两套 V0.3 总课表都已同步 2026-09-01 内部走课审核结论。
+
 V0.3 已解决主要跨课重复：
 - 两课一个成果 Pair；
 - 每四课至少一次明显作品/能力跃迁；
@@ -30,9 +32,9 @@ V0.3 已解决主要跨课重复：
 ### LESSON DONE / READY
 
 - L1 第一款游戏；
-- L2 游戏规则升级 — **V0.2 complexity-budget revised**；
+- L2 游戏规则升级 — **内容 V0.2：1复杂规则 + 1低风险反馈**；
 - L7 学习 App；
-- L8 学习反馈/规则升级 — **V0.2 complexity-budget revised**；
+- L8 学习反馈/规则升级 — **内容 V0.2：1聪明反馈 + 1低风险奖励**；
 - L15 产品测试与发布；
 - L16 AI Creator 嘉年华。
 
@@ -40,9 +42,9 @@ V0.3 已解决主要跨课重复：
 
 - L6 知识闯关：仅 Backup；正式兴趣馆 Pair 等 M4；
 - L11 用户试玩与改版：通用/M1/M2 路径可走；
-- L12 可信内容 — **V0.2，BASE核查2条关键事实 + 可见可信模块**；
-- L13 最终项目 V1：当前正式支持 M1/M2，完整项目菜单待 M3–M5；
-- L14 个性化与升级：通用/M1/M2 路径可走。
+- L12 可信内容 — **内容 V0.2：BASE核查2条关键事实 + 可见可信模块**；
+- L13 最终项目 V1 — **内容 V0.2：3个核心能力是范围上限，本节只做1个主要复杂个性化升级**；
+- L14 个性化与升级 — **内容 V0.2：V2差异为累计状态，本节只做1复杂升级 + 1低风险增强**。
 
 入口：`courses/primary-upper/lessons/README.md`
 
@@ -62,20 +64,20 @@ V0.3 已解决主要跨课重复：
 
 - L1 第一个数字产品；
 - L2 想法→产品要求；
-- L3 Rule Lab — **V0.3，BASE优先RL-01/RL-02 Known-Good预设**；
+- L3 Rule Lab — **内容 V0.3：BASE优先RL-01/RL-02 Known-Good预设**；
 - L4 版本与回退；
 - L7 用户体验；
 - L8 用户测试；
-- L9 AI评审 — **V0.2 action-first / BASE只改1条建议**；
-- L11 AI反方 — **V0.2 action-first / Before-After**；
-- L14 功能取舍与V2 — **V0.2，明确累计状态，不要求本节新建多个复杂功能**；
+- L9 AI评审 — **内容 V0.2：action-first / BASE只改1条建议**；
+- L11 AI反方 — **内容 V0.2：action-first / Before-After**；
+- L14 功能取舍与V2 — **内容 V0.2：累计状态，本节只加1个主要复杂升级**；
 - L15 发布前验收；
 - L16 Product Demo Day。
 
 ### CONDITIONAL DONE
 
-- L10 事实核查 — **V0.2，BASE核查2条 + 教师来源包 + 可见可信模块**；
-- L12 Real Problem Sprint V0.2：M1/M2 路径可走，工具类待 M5；
+- L10 事实核查 — **内容 V0.2：BASE核查2条 + 教师来源包 + 可见可信模块**；
+- L12 Real Problem Sprint — **内容 V0.2：训练赛，不再与 Final Launch 重复**；
 - L13 最终产品定义：当前支持 M1/M2，完整菜单待 M3–M5。
 
 入口：`courses/middle-school/lessons/README.md`
@@ -90,27 +92,30 @@ V0.3 已解决主要跨课重复：
 
 ## 4. 内部走课审核状态
 
-`docs/INTERNAL_WALKTHROUGH_AUDIT_V0.1.md` 已完成 P0 修正。
+`docs/INTERNAL_WALKTHROUGH_AUDIT_V0.1.md`：
 
-本轮新增课程硬规则：
+> **P0 FIXES COMPLETE / P1 WALKTHROUGH ACTIVE**
+
+核心新硬规则：
 
 > **BASE Complexity Budget = 1个主要复杂修改 + 1个低风险可见增强。**
 
 原因：AI生成快，但真实课堂的不确定耗时主要发生在试玩、触发、冲突、修复和再验证。
 
-认知型课同时新增：
+认知型课：
 
 > **单次原则讲解尽量3–5分钟；连续10分钟没有学生操作真实作品视为设计预警。**
 
-以及：
+并且：
 
 > **事实核查、AI评审、用户测试、AI反方等课必须保留肉眼可见的 Before/After。**
 
-已同步修改：
+已同步：
 - `docs/TEACHER_DELIVERY_PLAYBOOK_V0.1.md`；
-- 小学 L2 / L8 / L12；
-- 初中 L9 / L10 / L11 / L14；
-- 初中 L3 Rule Lab。
+- 小学 L2 / L8 / L12 / L13 / L14；
+- 初中 L3 / L9 / L10 / L11 / L14；
+- 小学/初中 V0.3 总课表；
+- 教师培训、学校首发 Gate、课堂卡与真实课堂迭代表。
 
 ---
 
@@ -122,10 +127,10 @@ V0.3 已解决主要跨课重复：
 - `mother-templates/M2-learning/`；
 - `mother-templates/M1-game/RULE_LAB_PRESET_COMBINATIONS_V0.1.md`；
 - `courses/shared/M1_M2_INTERNAL_WALKTHROUGH_PACK_V0.1.md`；
-- `courses/shared/CLASSROOM_CARDS_V0.1.md`；
-- `courses/shared/TEACHER_TRAINING_AND_CERTIFICATION_V0.1.md`；
-- `courses/shared/REAL_CLASSROOM_ITERATION_FORM_V0.1.md`；
-- `courses/shared/SCHOOL_LAUNCH_PACKAGE_V0.1.md`；
+- `courses/shared/CLASSROOM_CARDS_V0.1.md` — 内容 V0.2，新增 Complexity / Before-After 卡；
+- `courses/shared/TEACHER_TRAINING_AND_CERTIFICATION_V0.1.md` — 内容 V0.2；
+- `courses/shared/REAL_CLASSROOM_ITERATION_FORM_V0.1.md` — 内容 V0.2；
+- `courses/shared/SCHOOL_LAUNCH_PACKAGE_V0.1.md` — 内容 V0.2；
 - `docs/TEACHER_DELIVERY_PLAYBOOK_V0.1.md`；
 - `docs/CHALLENGE_POOL_SYSTEM_V1.md`。
 
@@ -172,14 +177,15 @@ V0.3 已解决主要跨课重复：
 ## 8. 当前下一执行
 
 1. M1/M2 不再重复做平台能力验证；
-2. 用 `M1_M2_INTERNAL_WALKTHROUGH_PACK_V0.1.md` 做教师内部走课，记录真实 BASE 时间、Fallback和教师负担；
-3. 有空时按 Run Cards 各跑一次 M3/M4/M5；
-4. M3/M4/M5 通过后立即产品化并补齐被阻塞课次；
-5. 完成小学/初中整学期内部走课；
-6. 教师完成培训/认证；
-7. 达到 School Launch Package Gate 后直接进入合作学校；
-8. 用真实课堂数据版本化迭代；
-9. 不新增无必要的前置实验门槛。
+2. 用 `M1_M2_INTERNAL_WALKTHROUGH_PACK_V0.1.md` 做教师真实内部走课，记录真实 BASE 时间、Fallback、AI修复和教师负担；
+3. RL-03/04/05 若要进入 BASE，先分别真实验证；否则继续作为 Challenge；
+4. 有空时按 Run Cards 各跑一次 M3/M4/M5；
+5. M3/M4/M5 通过后立即产品化并补齐被阻塞课次；
+6. 完成小学/初中整学期内部走课；
+7. 教师完成培训/认证；
+8. 达到 School Launch Package Gate 后直接进入合作学校；
+9. 用真实课堂数据版本化迭代；
+10. **在真实走课/母版实测出现新证据前，不再继续增加理论文件或重新打开已关闭的 P0 设计问题。**
 
 ---
 
@@ -191,4 +197,5 @@ V0.3 已解决主要跨课重复：
 4. 所有正式课仍遵守标准课时：小学25–30分钟锁 BASE，初中30–35分钟锁 BASE；
 5. BASE原则上只承担1个主要复杂修改；
 6. 所有课第一优先保持展示级成功率与学校/家长第一眼效果；
-7. 下一真正技术 Gate 只剩 M3/M4/M5 三个最小真实账号验证，不再泛搜其他平台。
+7. 下一真正技术 Gate 只剩 M3/M4/M5 三个最小真实账号验证；
+8. 下一真正教学 Gate 是教师按正式资产完成真实内部走课，而不是继续纸面推演。
