@@ -1,14 +1,6 @@
 # AI-Courses
 
-面向中小学生的 AI 原生创造课程研究、产品设计与课程产物仓库。
-
-## 当前产品目标
-
-1. **小学高年级 AI 创造课**；
-2. **初中 AI 数字创造课**；
-3. **AI Wow Demo / 标准课时体验课**。
-
-小学低年级暂不作为第一优先完整学期产品。
+面向中小学生的 AI 原生创造课程研究、产品设计与课程交付仓库。
 
 ## 核心定位
 
@@ -24,11 +16,9 @@
 
 ## 产品硬优先级
 
-第一优先不是“最强学生能做到多厉害”，而是：
-
 > **先保证绝大多数学生都有第一眼很厉害、可试玩、可分享、可展示的成品，再在这个成果之上拉开能力成长和原创深度。**
 
-因此课程统一采用：
+因此统一采用：
 
 - DISPLAY-SAFE BASE；
 - FALLBACK；
@@ -36,7 +26,7 @@
 - CHALLENGE POOL；
 - OPEN CREATION。
 
-低能力学生依靠稳定母版、半结构化模板、功能菜单和必要教师协助保住成品；高能力学生完成 BASE 后立即继续自由拓展。
+低能力学生有展示级兜底，高能力学生完成 BASE 后立即继续，不等待全班。
 
 核心政策：
 - `docs/OUTCOME_FIRST_AND_SCAFFOLDING_POLICY.md`
@@ -45,104 +35,98 @@
 
 ## 标准课时
 
-依据教育部《义务教育课程方案（2022年版）》：
+- 小学：40分钟，BASE目标约25–30分钟；
+- 初中：45分钟，BASE目标约30–35分钟。
 
-- 小学：**40分钟**；
-- 初中：**45分钟**。
-
-本项目要求 BASE 明显提前完成：
-
-### 小学
-- 25–30分钟左右：锁展示级 BASE；
-- 30–40分钟：试玩、判断、修改、收口；
-- 40分钟以后：Challenge / Open Creation。
-
-### 初中
-- 30–35分钟左右：锁展示级 BASE；
-- 35–45分钟：用户测试、判断、修改、收口；
-- 45分钟以后：更复杂产品挑战。
-
-目标：
+剩余标准课时用于试玩、判断、修改、反馈和收口；额外60/90分钟只用于 Challenge / Open Creation。
 
 > **40分钟能完整交付，60分钟不水，90分钟仍然有创造空间。**
 
-## 微信小程序教育平台 Known-Good
+## 当前主课程版本
 
-### T1 / M1 游戏母版 — FULL STRONG PASS
-
-真实账号已验证：分钟级生成、主题/规则/动画修改、AI自修真实故障、二维码发布、家长免登录试玩。
-
-### T2 / M2 学习平台 — STRONG PASS
-
-真实账号已验证：约2分钟生成完整五年级学习/闯关平台，后续复杂规则修改约1–2分钟完成。
-
-因此当前不再泛搜秒哒/扣子/WorkBuddy，也不重复证明“AI能不能做应用”。
-
-## 当前课程版本
+跨课审核后，当前结构已升级为 V0.3：
 
 - Wow Demo：`courses/demo/WECHAT_WOW_DEMO_V0.2_STANDARD_PERIOD.md`
-- 小学16课时：`courses/primary-upper/SEMESTER_16_LESSONS_V0.2.md`
-- 初中16课时：`courses/middle-school/SEMESTER_16_LESSONS_V0.2.md`
+- 小学16课时：`courses/primary-upper/SEMESTER_16_LESSONS_V0.3.md`
+- 初中16课时：`courses/middle-school/SEMESTER_16_LESSONS_V0.3.md`
 
-旧 V0.1 只保留历史参考。
+V0.1/V0.2 保留历史参考，不再作为总课表事实源。
+
+V0.3 新增核心原则：
+
+> **方法可以重复，体验不能重复；每两课一个明显 Showcase Pair，每四课至少一次作品类型/能力跃迁。**
+
+跨课审核：`docs/CROSS_LESSON_COHERENCE_AUDIT_V0.1.md`
+
+## 微信小程序教育平台 Known-Good
+
+### M1 游戏母版 — FULL STRONG PASS
+
+真实 T1 已验证：分钟级生成、主题/规则/动画修改、AI自修故障、二维码发布、家长免登录试玩。
+
+正式资产：`mother-templates/M1-game/README.md`
+
+### M2 学习平台 — STRONG PASS
+
+真实 T2 已验证：约2分钟生成完整学习/闯关平台，后续复杂规则修改约1–2分钟。
+
+正式资产：`mother-templates/M2-learning/README.md`
+
+因此不再泛搜秒哒/扣子/WorkBuddy，也不重复证明微信平台能不能生成应用。
 
 ## 当前逐课实施状态
 
-正式事实源：
-
-`docs/CURRICULUM_IMPLEMENTATION_STATUS_2026-09-01.md`
+正式事实源：`docs/CURRICULUM_IMPLEMENTATION_STATUS_2026-09-01.md`
 
 ### 小学高年级
 
-当前已有 **11 / 16 节逐课 V0.1**：
+当前已有 **11/16 节逐课 V0.1**：
 
-- 6节 Ready：L1、L2、L7、L8、L15、L16；
-- 5节 Conditional：L6、L11、L12、L13、L14；
-- 5节等待母版：L3/L4→M3，L5→M4，L9/L10→M5。
+- Ready：L1、L2、L7、L8、L15、L16；
+- Conditional/Backup：L6、L11、L12、L13、L14；
+- 等 M3：L3/L4；
+- 等 M4：L5，以及 L6 正式主版；
+- 等 M5：L9/L10。
 
 入口：`courses/primary-upper/lessons/README.md`
 
 ### 初中
 
-当前已有 **14 / 16 节逐课 V0.1**：
+当前已有 **14/16 节逐课 V0.1/V0.2**：
 
-- 11节 Ready：L1–L4、L7–L9、L11、L14–L16；
-- 3节 Conditional：L10、L12、L13；
-- 2节等待 M5：L5/L6。
+- Ready：L1–L4、L7–L9、L11、L14–L16；
+- Conditional：L10、L12、L13；
+- 等 M5：L5/L6。
 
 入口：`courses/middle-school/lessons/README.md`
 
-Conditional 表示当前 M1/M2/通用教学路径已经可执行，但未验证母版对应的产品菜单不能写成 Known-Good。
+## V0.3 关键节奏修正
 
-## 核心母版库
+### 小学
 
-入口：`mother-templates/README.md`
+- L5/L6 正式应成为“兴趣馆 → 可玩兴趣馆”，不默认用 M2 独立闯关后紧接 M2 学习 App；
+- L12 可信内容必须有肉眼可见的“已核查/来源/纠错”产品升级；
+- L13–L16 固定为 V1 → V2 → Release QA → 嘉年华。
 
-### 已产品化
+### 初中
 
-- `mother-templates/M1-game/README.md`
-- `mother-templates/M2-learning/README.md`
+- L1/L2 为第一产品 Pair；
+- L3/L4 改为新的 **Rule Lab Pair**，避免四周连续修改同一个作品；
+- L7 是“自己检查UX”，L8 是“真人用户测试”；
+- L9 是“AI评质量”，L11 是“AI质疑产品假设”；
+- L12 改为 **Real Problem Sprint 训练赛**，L13 才正式启动 Final Product。
 
-每套母版已定义：
+## 当前母版待验证
 
-- DISPLAY-SAFE BASE；
-- FALLBACK；
-- Theme / Feature / Wow Options；
-- Recovery；
-- Challenge；
-- 教师追问；
-- Showcase Standard；
-- Known Failure / R&D Notes。
-
-### 待最小真实账号验证
+只剩三个最小真实账号验证：
 
 - M3：互动故事 / 分支世界；
 - M4：兴趣馆 / 知识产品；
 - M5：工作台 / 记录 / 校园工具。
 
-只需各跑：
+每个只需：
 
-> **首版 + 两次修改 + 一次 Challenge**
+> **首版 + 两次修改 + 一次 Challenge。**
 
 入口：
 - `docs/MOTHER_TEMPLATE_VALIDATION_PROTOCOL_V1.md`
@@ -150,63 +134,43 @@ Conditional 表示当前 M1/M2/通用教学路径已经可执行，但未验证�
 
 ## 已形成的教师/学校交付资产
 
-### 课堂交付
 - `docs/TEACHER_DELIVERY_PLAYBOOK_V0.1.md`
 - `courses/shared/CLASSROOM_CARDS_V0.1.md`
-
-### 教师培训/认证
 - `courses/shared/TEACHER_TRAINING_AND_CERTIFICATION_V0.1.md`
-
-### 学校首发
 - `courses/shared/SCHOOL_LAUNCH_PACKAGE_V0.1.md`
-
-### 真实课堂持续迭代
 - `courses/shared/REAL_CLASSROOM_ITERATION_FORM_V0.1.md`
 
 教师统一节奏：
 
 > **先看成品 → 快速第一版 → BASE DEADLINE → 能力修改 → Challenge → 稳定收口。**
 
-教师救援统一按：
+教师救援：
 
 > **不帮 → 追问 → 给选项 → 给句式 → FALLBACK → 最后才局部代操作。**
 
-如果同类问题多人出现，优先全班统一救援，不逐台处理。
+## 当前研发/上线方法
 
-## 当前研发方法
+> **逆向真实课堂 → 课程设计 → 母版产品化 → 教师/学生材料 → 内部走课 → 达到可交付标准后直接进学校 → 用真实课堂持续迭代。**
 
-> **逆向真实课堂/成熟课程 → 课程 V0.x → 内部完整走课与教师准备 → 达到可交付标准后直接进学校 → 用真实课堂持续迭代。**
-
-不再把 `1老师+5学生` 作为课程研发强制 Gate。
-
-真实学校和多教师、多班级的长期授课才是后续主要数据来源。
+不再把 `1老师+5学生` 当作强制研发 Gate。
 
 ## 当前下一执行
 
-1. 已验证课程继续内部走课/完善展示素材；
-2. 不再重复验证 M1/M2；
-3. 有空时按 Run Cards 各跑一次 M3/M4/M5；
-4. M3/M4/M5 通过后立即产品化并补齐被阻塞课次；
-5. 对所有已写教案做跨课重复/节奏/难度审核；
-6. 完成教师培训材料、作品模板与内部走课；
+1. 对当前已写课次做内部走课与时间/重复/教师负担检查；
+2. 不再重复 M1/M2；
+3. 有空时各跑一次 M3/M4/M5；
+4. 通过后立即产品化并补齐被阻塞课次；
+5. 完善教师演示版、学生卡、作品展示样例；
+6. 教师完成当前课程线培训/认证；
 7. 达到 `SCHOOL_LAUNCH_PACKAGE_V0.1.md` Gate 后直接进入合作学校；
-8. 从真实课堂持续积累完成率、FALLBACK、教师救援、Challenge 和学校/家长反馈。
+8. 用真实课堂的完成率、FALLBACK、救援负担、Challenge 和学校/家长反馈持续迭代。
 
 ## 商业交付与壁垒
 
-不采用“一次性卖教案”。当前方向：
+不采用“一次性卖教案”。方向：
 
 > **年度/学期授权 + 教师认证 + 班级激活 + 学生作品/学校成果体系 + 持续课程更新。**
 
-核心壁垒沉淀在：
-
-- 稳定母版；
-- 展示级兜底；
-- Challenge Pool；
-- 教师培训和支架；
-- 故障恢复；
-- 真实课堂迭代数据；
-- 学生作品与学校成果体系；
-- 持续更新。
+壁垒沉淀在稳定母版、展示级兜底、Challenge Pool、教师认证、故障恢复、真实课堂数据、学生作品/学校成果和持续更新，而不是绑定某一个外部 AI 工具。
 
 更新时间：2026-09-01
