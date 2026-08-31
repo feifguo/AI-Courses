@@ -8,14 +8,16 @@
 2. `README.md`；
 3. `docs/OUTCOME_FIRST_AND_SCAFFOLDING_POLICY.md`；
 4. `docs/STANDARD_PERIOD_AND_EXTENSION_POLICY.md`；
-5. `docs/CURRICULUM_RND_AND_SCHOOL_LAUNCH_STRATEGY.md`；
-6. `docs/CURRICULUM_DESIGN_EVIDENCE_SYNTHESIS_V1.md`；
-7. `docs/CURRICULUM_REVERSE_ENGINEERING_CASE_MATRIX_V1.md`；
-8. `docs/DECISIONS.md`；
-9. 微信小程序教育平台 T1/T2 真实账号结果；
-10. `docs/PRODUCT_STRATEGY.md`；
-11. `docs/COMPETITIVE_RESEARCH.md`；
-12. 各 `courses/<course>/` 最新产物。
+5. `docs/CHALLENGE_POOL_SYSTEM_V1.md`；
+6. `docs/CURRICULUM_RND_AND_SCHOOL_LAUNCH_STRATEGY.md`；
+7. `docs/CURRICULUM_DESIGN_EVIDENCE_SYNTHESIS_V1.md`；
+8. `docs/CURRICULUM_REVERSE_ENGINEERING_CASE_MATRIX_V1.md`；
+9. `docs/MOTHER_TEMPLATE_VALIDATION_PROTOCOL_V1.md`；
+10. `docs/DECISIONS.md`；
+11. 微信小程序教育平台 T1/T2 真实账号结果；
+12. `docs/PRODUCT_STRATEGY.md`；
+13. `docs/COMPETITIVE_RESEARCH.md`；
+14. 各 `courses/<course>/` 最新产物。
 
 聊天记录只能补背景，不能覆盖仓库事实。
 
@@ -179,12 +181,14 @@
 
 > **目标清晰度、表达能力、任务拆解、判断、验证、AI协作成熟度。**
 
-## 6. 当前课程产品线
+## 6. 当前课程产品线与版本
 
-- `courses/demo/`：AI Wow Demo；
-- `courses/primary-upper/`：小学高年级正式学期课程，当前核心产品之一；
-- `courses/middle-school/`：初中正式学期课程，当前核心产品之一；
+- `courses/demo/WECHAT_WOW_DEMO_V0.2_STANDARD_PERIOD.md`：当前 Wow Demo 主版本；
+- `courses/primary-upper/SEMESTER_16_LESSONS_V0.2.md`：当前小学高年级16课时主版本；
+- `courses/middle-school/SEMESTER_16_LESSONS_V0.2.md`：当前初中16课时主版本；
 - `courses/primary-lower/`：小学低年级候选方向，暂不优先开发完整学期课。
+
+旧 V0.1 文件只保留历史参考，不再作为默认课程版本。
 
 ## 7. 新增文件规则
 
@@ -217,16 +221,19 @@
 
 当前正式阶段：
 
-> **EVIDENCE-BASED CURRICULUM DESIGN**
+> **MOTHER TEMPLATE VALIDATION → PRODUCTIZATION**
 
-1. 继续扩展并结构化真实课程/课堂案例证据库；
-2. 优先研究 8–16 周课程中支架如何逐步撤掉、学生作品如何升级、自由度如何增加；
-3. 形成小学高年级学生能力阶梯、作品难度阶梯和教师支架，同时确保每一级都有展示级保底成果；
-4. 形成初中学生能力阶梯、作品难度阶梯和教师支架；
-5. 把所有课次按 `STANDARD_PERIOD_AND_EXTENSION_POLICY.md` 重新校准时间盒；
-6. 修订 Wow Demo V0.x；
-7. 设计/修订小学高年级、初中正式学期课程 V0.x；
-8. 完成内部走课、教师手册、学生材料、作品标准与故障恢复；
+1. 不再重复验证 M1 游戏母版和 M2 学习平台母版；
+2. 按 `docs/MOTHER_TEMPLATE_VALIDATION_PROTOCOL_V1.md` 真实测试：
+   - M3 互动故事/分支世界；
+   - M4 兴趣馆/知识产品；
+   - M5 工作台/记录/校园工具；
+3. 通过的母版制作完整 `BASE / FALLBACK / Recovery / Theme / Rule / Wow / Challenge / Showcase`；
+4. 对小学核心母版验证 BASE 是否有能力稳定落在25–30分钟预算；
+5. 对初中核心母版验证 BASE 是否有能力稳定落在30–35分钟预算；
+6. 把通过母版映射回小学/初中16课时 V0.2；
+7. 形成教师手册、学生任务卡、课堂恢复与展示素材；
+8. 做内部完整走课；
 9. 达到 `CURRICULUM_RND_AND_SCHOOL_LAUNCH_STRATEGY.md` 内部发布 Gate 后直接进入学校授课；
 10. 从真实授课持续收集教师/学生/学校反馈，版本化迭代；
 11. 不新增无必要的前置实验门槛。
