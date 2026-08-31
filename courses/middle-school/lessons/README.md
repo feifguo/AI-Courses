@@ -4,7 +4,7 @@
 状态：ACTIVE LESSON PRODUCTIZATION INDEX
 标准课时：45分钟
 
-## 已完成完整教案化
+## A. 已完成完整教案化，可进入内部走课
 
 | 课次 | 文件 | 主要机制/底座 | 状态 |
 |---|---|---|---|
@@ -20,17 +20,21 @@
 | L15 | `L15_RELEASE_QA_V0.1.md` | 发布验收 | READY FOR INTERNAL WALKTHROUGH |
 | L16 | `L16_PRODUCT_DEMO_DAY_V0.1.md` | 产品发布 | READY FOR INTERNAL WALKTHROUGH |
 
-## 仍待母版验证
+## B. CONDITIONAL V0.1 已写
+
+| 课次 | 文件 | 当前可用路径 | 尚待 |
+|---|---|---|---|
+| L10 | `L10_FACT_CHECKING_V0.1.md` | M2事实核查 | M4完整知识产品 |
+| L12 | `L12_REAL_PROBLEM_V1_V0.1.md` | M1/M2真实问题V1 | M5工具类菜单 |
+| L13 | `L13_FINAL_PRODUCT_DEFINITION_V0.1.md` | M1/M2最终项目 | 完整M3–M5菜单 |
+
+这些课可以先用已验证底座走课，但不得把未验证产品类型写成 Known-Good。
+
+## C. 仍待母版验证
 
 - L5/L6：主要依赖 M5 工作台/记录/真实工具母版。
 
-## CONDITIONAL
-
-- L10 事实核查：可基于 M2 开发，完整知识产品案例等 M4；
-- L12 真实问题产品 V1：M1/M2 可先做，完整工具类菜单等 M5；
-- L13 最终产品定义：当前可支持 M1/M2，完整母版菜单等 M3–M5。
-
-## 每份完整教案必须包含
+## 每份正式教案必须包含
 
 - 对外成果；
 - 能力暗线；
