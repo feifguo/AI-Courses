@@ -32,8 +32,9 @@
 - `docs/OUTCOME_FIRST_AND_SCAFFOLDING_POLICY.md`
 - `docs/STANDARD_PERIOD_AND_EXTENSION_POLICY.md`
 - `docs/CHALLENGE_POOL_SYSTEM_V1.md`
+- `docs/INTERNAL_WALKTHROUGH_AUDIT_V0.1.md`
 
-## 标准课时
+## 标准课时与复杂度预算
 
 - 小学：40分钟，BASE目标约25–30分钟；
 - 初中：45分钟，BASE目标约30–35分钟。
@@ -41,6 +42,24 @@
 剩余标准课时用于试玩、判断、修改、反馈和收口；额外60/90分钟只用于 Challenge / Open Creation。
 
 > **40分钟能完整交付，60分钟不水，90分钟仍然有创造空间。**
+
+2026-09-01 内部走课审核新增：
+
+> **BASE Complexity Budget = 1个主要复杂修改 + 1个低风险可见增强。**
+
+原因不是 AI 做不出来，而是课堂真正的不确定耗时主要发生在：
+
+> **试玩 → 触发 → 发现冲突 → AI修复 → 再验证。**
+
+第二个主要复杂修改默认进入 Guided / Challenge / 延长课时。
+
+## 认知型课硬规则
+
+需求表达、AI评审、事实核查、AI反方、用户测试等课程：
+
+> **单次原则讲解尽量3–5分钟；连续10分钟没有学生操作真实作品，视为设计预警。**
+
+同时必须有肉眼可见的 Before/After，避免变成“只学道理、不见作品变化”的AI素养课。
 
 ## 当前主课程版本
 
@@ -50,13 +69,15 @@
 - 小学16课时：`courses/primary-upper/SEMESTER_16_LESSONS_V0.3.md`
 - 初中16课时：`courses/middle-school/SEMESTER_16_LESSONS_V0.3.md`
 
-V0.1/V0.2 保留历史参考，不再作为总课表事实源。
+V0.1/V0.2 总课表保留历史参考，不再作为当前结构事实源。
 
-V0.3 新增核心原则：
+V0.3：
 
 > **方法可以重复，体验不能重复；每两课一个明显 Showcase Pair，每四课至少一次作品类型/能力跃迁。**
 
 跨课审核：`docs/CROSS_LESSON_COHERENCE_AUDIT_V0.1.md`
+
+内部走课审核：`docs/INTERNAL_WALKTHROUGH_AUDIT_V0.1.md`
 
 ## 微信小程序教育平台 Known-Good
 
@@ -74,13 +95,26 @@ V0.3 新增核心原则：
 
 因此不再泛搜秒哒/扣子/WorkBuddy，也不重复证明微信平台能不能生成应用。
 
+## Rule Lab 安全预设
+
+正式入口：
+
+`mother-templates/M1-game/RULE_LAB_PRESET_COMBINATIONS_V0.1.md`
+
+已有 T1 真实证据：
+
+- **RL-01 连击系统**：成功→连击增加；三连击奖励；失败清零；
+- **RL-02 倒计时系统**：60秒；超时失败；提前完成停止；最后10秒警告。
+
+RL-03 三条生命、RL-04 能量升级、RL-05 收集解锁目前仅为候选，未真实验证前不作为弱学生 BASE。
+
 ## 当前逐课实施状态
 
 正式事实源：`docs/CURRICULUM_IMPLEMENTATION_STATUS_2026-09-01.md`
 
 ### 小学高年级
 
-当前已有 **11/16 节逐课 V0.1**：
+当前已有 **11/16 节逐课脚本**：
 
 - Ready：L1、L2、L7、L8、L15、L16；
 - Conditional/Backup：L6、L11、L12、L13、L14；
@@ -88,15 +122,27 @@ V0.3 新增核心原则：
 - 等 M4：L5，以及 L6 正式主版；
 - 等 M5：L9/L10。
 
+审核后：
+- L2：BASE改成1复杂规则 + 1低风险反馈；
+- L8：BASE改成1聪明反馈 + 1低风险奖励；
+- L12：BASE核查3条降为2条，并强制可见可信模块。
+
 入口：`courses/primary-upper/lessons/README.md`
 
 ### 初中
 
-当前已有 **14/16 节逐课 V0.1/V0.2**：
+当前已有 **14/16 节逐课脚本**：
 
 - Ready：L1–L4、L7–L9、L11、L14–L16；
 - Conditional：L10、L12、L13；
 - 等 M5：L5/L6。
+
+审核后：
+- L3：Rule Lab BASE优先RL-01/RL-02；
+- L9：action-first，BASE只改1条AI建议；
+- L10：BASE核查2条 + 教师来源包；
+- L11：action-first + Before/After；
+- L14：V2指标为累计状态，本节只加1个主要复杂升级。
 
 入口：`courses/middle-school/lessons/README.md`
 
@@ -111,10 +157,10 @@ V0.3 新增核心原则：
 ### 初中
 
 - L1/L2 为第一产品 Pair；
-- L3/L4 改为新的 **Rule Lab Pair**，避免四周连续修改同一个作品；
+- L3/L4 为新的 Rule Lab Pair；
 - L7 是“自己检查UX”，L8 是“真人用户测试”；
 - L9 是“AI评质量”，L11 是“AI质疑产品假设”；
-- L12 改为 **Real Problem Sprint 训练赛**，L13 才正式启动 Final Product。
+- L12 是 Real Problem Sprint 训练赛，L13 才正式启动 Final Product。
 
 ## 当前母版待验证
 
@@ -135,6 +181,7 @@ V0.3 新增核心原则：
 ## 已形成的教师/学校交付资产
 
 - `docs/TEACHER_DELIVERY_PLAYBOOK_V0.1.md`
+- `courses/shared/M1_M2_INTERNAL_WALKTHROUGH_PACK_V0.1.md`
 - `courses/shared/CLASSROOM_CARDS_V0.1.md`
 - `courses/shared/TEACHER_TRAINING_AND_CERTIFICATION_V0.1.md`
 - `courses/shared/SCHOOL_LAUNCH_PACKAGE_V0.1.md`
@@ -150,20 +197,25 @@ V0.3 新增核心原则：
 
 ## 当前研发/上线方法
 
-> **逆向真实课堂 → 课程设计 → 母版产品化 → 教师/学生材料 → 内部走课 → 达到可交付标准后直接进学校 → 用真实课堂持续迭代。**
+> **逆向真实课堂 → 课程设计 → 母版产品化 → 逐课教案 → 教师/学生材料 → 内部走课 → 达到可交付标准后直接进学校 → 用真实课堂持续迭代。**
 
 不再把 `1老师+5学生` 当作强制研发 Gate。
 
 ## 当前下一执行
 
-1. 对当前已写课次做内部走课与时间/重复/教师负担检查；
-2. 不再重复 M1/M2；
-3. 有空时各跑一次 M3/M4/M5；
-4. 通过后立即产品化并补齐被阻塞课次；
-5. 完善教师演示版、学生卡、作品展示样例；
-6. 教师完成当前课程线培训/认证；
-7. 达到 `SCHOOL_LAUNCH_PACKAGE_V0.1.md` Gate 后直接进入合作学校；
-8. 用真实课堂的完成率、FALLBACK、救援负担、Challenge 和学校/家长反馈持续迭代。
+当前阶段：
+
+> **P0 INTERNAL AUDIT COMPLETE → M1/M2 REAL WALKTHROUGH → M3/M4/M5 MINIMAL VALIDATION → SCHOOL DELIVERY**
+
+1. 不再做新的泛平台研究；
+2. 用 `M1_M2_INTERNAL_WALKTHROUGH_PACK_V0.1.md` 做教师真实内部走课，记录 BASE 时间、Fallback、AI修复与教师负担；
+3. RL-03/04/05 若要进入 BASE，先各做一次真实验证；
+4. 有空时各跑一次 M3/M4/M5；
+5. 通过后立即产品化并补齐被阻塞课次；
+6. 完成整学期内部走课；
+7. 教师完成当前课程线培训/认证；
+8. 达到 `SCHOOL_LAUNCH_PACKAGE_V0.1.md` Gate 后直接进入合作学校；
+9. 用真实课堂的完成率、FALLBACK、救援负担、Challenge 和学校/家长反馈持续迭代。
 
 ## 商业交付与壁垒
 
