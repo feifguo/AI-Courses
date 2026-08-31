@@ -44,10 +44,15 @@ AI-Courses/
 │   ├── WECHAT_MINIPROGRAM_EDU_T1_REAL_ACCOUNT_RESULT_2026-08-31.md
 │   ├── WECHAT_MINIPROGRAM_EDU_T2_ENGLISH_PLATFORM_TEST_V1.md
 │   ├── WECHAT_MINIPROGRAM_EDU_T2_REAL_ACCOUNT_RESULT_2026-08-31.md
+│   ├── WECHAT_MINIPROGRAM_EDU_5_STUDENT_CLASSROOM_VALIDATION_V1.md
+│   ├── WECHAT_MINIPROGRAM_EDU_5_STUDENT_OBSERVATION_FORM.md
+│   ├── WECHAT_MINIPROGRAM_EDU_PRECLASS_SETUP_V1.md
 │   ├── PLATFORM_DEPENDENCY_AND_CHANNEL_RISK.md
 │   └── CHANNEL_MOAT_STRATEGY.md
 └── courses/
-    ├── demo/README.md
+    ├── demo/
+    │   ├── README.md
+    │   └── WECHAT_WOW_DEMO_V0.1.md
     ├── primary-upper/README.md
     ├── middle-school/README.md
     └── primary-lower/README.md
@@ -88,24 +93,48 @@ AI-Courses/
 
 ## 当前阶段
 
-当前阶段已经从：
-
-> **TOOL CAPABILITY VALIDATION**
-
-转入：
+当前阶段：
 
 > **CLASSROOM DELIVERY VALIDATION + DEMO PRODUCTIZATION**
 
-下一步重点：
+已准备：
 
-1. 5 个学生账号小规模真实测试；
-2. 教师分发任务、查看和收集学生作品；
-3. 多人同时使用 AI 时的并发与额度；
-4. 设计 45–60 分钟 Wow Demo V0.1；
-5. 让一个普通、不会编程的代理教师照脚本试教；
-6. 通过后再决定是否需要 30 人课堂模拟。
+1. **5 人课堂验证协议**：账号、登录、5 人同时生成、教师救援、作品收集、二维码发布；
+2. **5 人 Pilot 观察表**：逐人记录第一版时间、教师介入、AI 修复、作品差异度和学生原话；
+3. **课前 Preflight**：账号、设备、网络、教师端、发布和额度的 Go / No-Go 清单；
+4. **AI Wow Demo V0.1**：60 分钟做出人生第一个微信小程序。
 
-当前原则仍然是：如果微信平台本身能稳定满足主要课程需求，就优先采用单平台课堂体验；只有出现明确能力缺口时，才重新引入秒哒、扣子等第二创作引擎。
+### Demo V0.1 当前主任务
+
+采用：
+
+> **同一个稳定小游戏骨架 + 主题自由 + 规则自由 + 一个“我还想让它……”的个人创意。**
+
+不是全班复制同一个 Prompt，也不是让 30 名零基础学生完全自由开发 30 种不同产品。
+
+T2 的英语学习平台作为：
+
+- 开场/结尾能力上限展示；
+- 正式学期课程“从好玩到有用”的下一次能力跃迁；
+- 校长/家长理解课程长期价值的重要作品。
+
+## 当前下一执行
+
+下一事实门槛不是继续搜工具，而是：
+
+> **5 STUDENT REAL PILOT**
+
+顺序：
+
+1. 课前按 `WECHAT_MINIPROGRAM_EDU_PRECLASS_SETUP_V1.md` 准备 5 个学生账号与设备；
+2. 用 `courses/demo/WECHAT_WOW_DEMO_V0.1.md` 真实试跑；
+3. 全程填写 `WECHAT_MINIPROGRAM_EDU_5_STUDENT_OBSERVATION_FORM.md`；
+4. 按 `WECHAT_MINIPROGRAM_EDU_5_STUDENT_CLASSROOM_VALIDATION_V1.md` 判定 Strong Pass / Pass with Guardrails / Fail for Scale；
+5. 根据学生真实行为出 Demo V0.2；
+6. 再让一名不会编程的代理教师照脚本试教；
+7. 之后才做 20–30 人规模测试并冻结 Demo V1.0。
+
+如果微信平台在 5 人及后续课堂验证中继续通过，就优先保持单平台课堂体验；只有出现明确能力缺口时，才重新引入秒哒、扣子等第二创作引擎。
 
 ## 商业交付与壁垒
 
