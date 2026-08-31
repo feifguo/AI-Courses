@@ -1,28 +1,28 @@
 # 小学高年级逐课教案索引
 
 更新时间：2026-09-01
-状态：ACTIVE LESSON PRODUCTIZATION INDEX
+状态：ACTIVE LESSON PRODUCTIZATION INDEX / INTERNAL AUDIT SYNCED
 标准课时：40分钟
 当前总结构：`../SEMESTER_16_LESSONS_V0.3.md`
 
 ## A. 已完成完整教案化，可进入内部走课
 
-| 课次 | 文件 | 主要底座 | 状态 |
+| 课次 | 文件 | 主要底座 | 当前内容版本/状态 |
 |---|---|---|---|
 | L1 | `L01_FIRST_GAME_V0.1.md` | M1 游戏母版 | READY |
-| L2 | `L02_GAME_RULES_V0.1.md` | M1 游戏母版 | READY |
+| L2 | `L02_GAME_RULES_V0.1.md` | M1 游戏母版 | **V0.2：1复杂规则 + 1低风险反馈** |
 | L7 | `L07_LEARNING_APP_V0.1.md` | M2 学习平台 | READY |
-| L8 | `L08_LEARNING_RULES_V0.1.md` | M2 学习平台 | READY |
+| L8 | `L08_LEARNING_RULES_V0.1.md` | M2 学习平台 | **V0.2：1聪明反馈 + 1低风险奖励** |
 | L15 | `L15_PRODUCT_TEST_AND_RELEASE_V0.1.md` | 通用测试/发布 | READY |
 | L16 | `L16_AI_CREATOR_CARNIVAL_V0.1.md` | 通用展示 | READY |
 
-## B. CONDITIONAL V0.1 已写
+## B. CONDITIONAL / Backup 已写
 
 | 课次 | 文件 | 当前定位 | 尚待 |
 |---|---|---|---|
 | L6 | `L06_KNOWLEDGE_CHALLENGE_V0.1.md` | **Backup only**：M2独立闯关可用 | 正式默认等M4，与L5组成兴趣馆Pair |
 | L11 | `L11_USER_TEST_ITERATION_V0.1.md` | 通用/M1/M2可走 | 未来扩展全部母版 |
-| L12 | `L12_TRUSTWORTHY_CONTENT_V0.1.md` | M2可信内容可走 | M4完整知识产品 |
+| L12 | `L12_TRUSTWORTHY_CONTENT_V0.1.md` | **V0.2：BASE核查2条 + 可见可信模块** | M4完整知识产品 |
 | L13 | `L13_FINAL_PROJECT_V1_V0.1.md` | M1/M2最终项目可走 | 完整M3–M5菜单 |
 | L14 | `L14_PERSONALIZATION_UPGRADE_V0.1.md` | 通用/M1/M2可走 | 未来扩展全部母版 |
 
@@ -49,7 +49,28 @@ L6 特别注意：正式16课时默认不应在没有 M4 时连续安排“M2知
 
 > **方法可以重复，体验不能重复；每两课一个明显成果里程碑。**
 
-## 每份正式教案必须包含
+---
+
+## E. 内部走课新增硬规则
+
+来自 `../../../docs/INTERNAL_WALKTHROUGH_AUDIT_V0.1.md`：
+
+> **BASE Complexity Budget = 1个主要复杂修改 + 1个低风险可见增强。**
+
+AI节省下来的时间优先留给：
+- 试玩；
+- 判断；
+- 修复；
+- 同伴反馈；
+- Challenge/自由创造。
+
+不自动转化为第二、第三个复杂 BASE 功能。
+
+认知型课原则讲解尽量3–5分钟，连续10分钟没有操作真实作品视为设计预警。
+
+---
+
+## F. 每份正式教案必须包含
 
 - 对外成果；
 - 能力暗线；
