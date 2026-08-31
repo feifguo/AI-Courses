@@ -28,67 +28,84 @@
 
 ```text
 AI-Courses/
-├── AGENTS.md                           # 后续人/Agent 工作入口
-├── README.md                           # 仓库总览
+├── AGENTS.md
+├── README.md
 ├── docs/
-│   ├── PRODUCT_STRATEGY.md             # 总体课程产品战略
-│   ├── COMPETITIVE_RESEARCH.md         # 竞品/案例研究及来源
-│   ├── PRODUCT_COMPARISON.md           # 横向对比与机会空间
-│   ├── DECISIONS.md                    # 已确定产品决策与待验证项
-│   ├── TOOL_AND_WOW_SCAN_2026-08-31.md # 低门槛 Wow 成果/机制扫描
-│   ├── TOOL_CANDIDATE_MATRIX_2026-08-31.md # 工具候选、教育原生/创作引擎分层与统一任务
-│   ├── CLASSROOM_PLATFORM_ECONOMICS_AND_RISKS_2026-08-31.md # 费用、模型绑定、年龄与课堂风险
-│   ├── SCHOOL_NATIVE_PLATFORM_SCAN_2026-08-31.md # 国内真实进校平台与证据
-│   ├── P0_HANDS_ON_BENCHMARK_PROTOCOL_V1.md # P0工具统一实测协议
-│   ├── PLATFORM_DEPENDENCY_AND_CHANNEL_RISK.md # 底层平台依赖、竞合与渠道风险
-│   └── CHANNEL_MOAT_STRATEGY.md        # 代理商授权、教师认证、平台与课程壁垒
+│   ├── PRODUCT_STRATEGY.md
+│   ├── COMPETITIVE_RESEARCH.md
+│   ├── PRODUCT_COMPARISON.md
+│   ├── DECISIONS.md
+│   ├── TOOL_AND_WOW_SCAN_2026-08-31.md
+│   ├── TOOL_CANDIDATE_MATRIX_2026-08-31.md
+│   ├── CLASSROOM_PLATFORM_ECONOMICS_AND_RISKS_2026-08-31.md
+│   ├── SCHOOL_NATIVE_PLATFORM_SCAN_2026-08-31.md
+│   ├── P0_HANDS_ON_BENCHMARK_PROTOCOL_V1.md
+│   ├── WECHAT_MINIPROGRAM_EDU_HANDS_ON_TEST_V1.md
+│   ├── WECHAT_MINIPROGRAM_EDU_T1_REAL_ACCOUNT_RESULT_2026-08-31.md
+│   ├── WECHAT_MINIPROGRAM_EDU_T2_ENGLISH_PLATFORM_TEST_V1.md
+│   ├── WECHAT_MINIPROGRAM_EDU_T2_REAL_ACCOUNT_RESULT_2026-08-31.md
+│   ├── PLATFORM_DEPENDENCY_AND_CHANNEL_RISK.md
+│   └── CHANNEL_MOAT_STRATEGY.md
 └── courses/
-    ├── demo/README.md                  # 入门演示课产品定义
-    ├── primary-upper/README.md         # 小学高年级正式课
-    ├── middle-school/README.md         # 初中正式课
-    └── primary-lower/README.md         # 小学低年级候选方向/暂缓原因
+    ├── demo/README.md
+    ├── primary-upper/README.md
+    ├── middle-school/README.md
+    └── primary-lower/README.md
 ```
 
 后续每条课程线自己的教案、教师手册、学生材料、作品模板、Demo Day 方案、工具配置、试课记录等，应继续放入对应课程目录，不要把所有课程产物混放在 `docs/` 或仓库根目录。
 
+## 当前工具 Known-Good
+
+### 微信小程序教育平台 T1 — FULL STRONG PASS
+
+真实账号完成：
+
+- 记忆力翻牌小游戏；
+- 主题个性化；
+- 倒计时、失败、连击、加分等程序规则修改；
+- 通关火箭动画；
+- 真实“加载中”故障由 AI 自己修复；
+- 每次生成/修改均在 1 分钟以内；
+- 发布二维码成功；
+- 家长端无需登录直接试玩。
+
+### 微信小程序教育平台 T2 — STRONG PASS
+
+真实账号完成五年级英语单词学习/闯关平台及后续规则修改。
+
+实测耗时：
+
+- 首次开发约 2 分钟；
+- 第一次修改约 2 分钟；
+- 后两次修改约 1 分钟。
+
+这已经真实验证：
+
+> **小学五年级水平的学生，不需要先学传统编程，就能够借助 AI 在分钟级做出一个完整、可使用、可继续迭代的学习产品。**
+
+因此当前不再把主要研发时间用于证明“AI 能不能做出产品”。
+
 ## 当前阶段
 
-当前处于 **产品架构与课程原型阶段**。
+当前阶段已经从：
 
-工具研究已经从第一轮“谁的 AI 生成能力最强”进入第二轮：
+> **TOOL CAPABILITY VALIDATION**
 
-> **学校教育原生平台 + AI 创作引擎分层选型。**
+转入：
 
-### 小学高年级当前 P0
+> **CLASSROOM DELIVERY VALIDATION + DEMO PRODUCTIZATION**
 
-1. **微信小程序教育平台**：学校适配最强，已有中小学大规模真实使用、教师/学生/作品管理、AI自然语言辅助和真小程序发布；当前关键是实测其 AI-native 强度是否足够达到 10–15 分钟第一版。
-2. **秒哒 MIAODA**：AI-native 无代码生成体验更直接；当前关键是学校组织、未成年人、账号和商业课程使用方式。
+下一步重点：
 
-### 初中当前 P0
+1. 5 个学生账号小规模真实测试；
+2. 教师分发任务、查看和收集学生作品；
+3. 多人同时使用 AI 时的并发与额度；
+4. 设计 45–60 分钟 Wow Demo V0.1；
+5. 让一个普通、不会编程的代理教师照脚本试教；
+6. 通过后再决定是否需要 30 人课堂模拟。
 
-1. 微信小程序教育平台；
-2. 秒哒；
-3. 扣子 / 扣子编程。
-
-### 教师/R&D 对照组
-
-- WorkBuddy / CodeBuddy：验证复杂工作台/轻应用机制，也适合课程研发方制作稳定底座。
-
-### 重要产品标杆但非默认底层依赖
-
-- **CocoRobo / CocoFlow**：已经公开实现学校原生、无代码、自然语言创建 Agent/Workflow/H5，甚至有“学生用自然语言生成互动小工具”的课堂案例，和我们的 AI-native 方向高度接近；但它自身同时销售平台、课程、师训和到校服务，与我们的商业层级重叠，因此当前作为 P0 产品标杆和潜在合作方，而不是默认底层依赖。
-- 腾讯扣叮、科大讯飞 AI 创新教育等：重点学习其学校平台、师训、管理、赛事与成果闭环，但课程路径较容易回到传统编程，需要与我们的方向区分。
-
-## 当前统一实测任务
-
-`docs/P0_HANDS_ON_BENCHMARK_PROTOCOL_V1.md` 已冻结首轮统一任务：
-
-- T1：记忆力翻牌 / 个性化小游戏；
-- T2：五年级英语学习平台；
-- T3：AI 兴趣博物馆 / AI馆长；
-- T4：江南水乡互动场景（视觉上限测试）。
-
-特别重要：2026-07 腾讯团队培训已公开演示微信小程序教育平台通过自然语言生成“记忆力翻牌”小游戏，并称可实现“5分钟做一个小程序”。这一证据足以把它提升为 P0，但仍需要我们用普通教师/学校账号自行复现，不把专家演示当作最终课堂验证。
+当前原则仍然是：如果微信平台本身能稳定满足主要课程需求，就优先采用单平台课堂体验；只有出现明确能力缺口时，才重新引入秒哒、扣子等第二创作引擎。
 
 ## 商业交付与壁垒
 
@@ -99,15 +116,5 @@ AI-Courses/
 核心壁垒不是让代理商看不到课程，而是让正规代理使用我们的最新课程、教师认证、稳定模板、技术救援、作品集、证书和学校成果报告时，比自行复制更省事、更容易成交和续费。
 
 底层创作平台必须保持可替换。平台供应商若本身也直接销售“平台 + 课程 + 师训 + 到校服务”，还要额外评估渠道冲突，避免我们的学校关系和课程品牌被底层平台吞没。
-
-## 下一执行状态
-
-公开资料扫描已经足以停止继续泛搜平台。
-
-下一步是：
-
-> **REAL ACCOUNT HANDS-ON BENCHMARK**
-
-需要真实进入微信小程序教育平台、秒哒、扣子等，用同一 Prompt 计时并记录：第一版时间、修改成功率、是否碰代码、教师救援次数、账号摩擦、30人课堂可行性、费用和最终 Wow 效果。
 
 更新时间：2026-08-31
