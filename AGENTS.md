@@ -2,35 +2,55 @@
 
 本文件是 AI-Courses 仓库工作入口。任何新会话、研究 Agent、课程设计或开发任务开始前先读取。
 
-更新时间：2026-09-01
+更新时间：2026-09-17
+
+## 0. 跨工具恢复规则
+
+> **不要依赖 ChatGPT、WorkBuddy、Hermes、Codex 中任何一个工具的聊天记忆恢复项目。Repo 必须能够独立恢复全部关键上下文。**
+
+新会话/新工具首先读取：
+
+1. `HANDOFF.md`；
+2. 本文件；
+3. `docs/PROJECT_EVOLUTION_AND_RATIONALE_2026-09-17.md`；
+4. 再按任务类型读取对应专题文件。
+
+如果用户说“情况有变化”，不要从零设计，也不要机械执行旧 TODO；先恢复 Repo 事实和旧决策理由，再判断新事实具体改变哪一层。
+
+重要新决策不得只留在聊天里，必须写回 Repo。
+
+---
 
 ## 1. 事实源顺序
 
 1. 当前 GitHub `main`；
-2. `README.md`；
-3. `docs/CURRICULUM_IMPLEMENTATION_STATUS_2026-09-01.md`；
-4. `docs/INTERNAL_WALKTHROUGH_AUDIT_V0.1.md`；
-5. `docs/CROSS_LESSON_COHERENCE_AUDIT_V0.1.md`；
-6. `docs/OUTCOME_FIRST_AND_SCAFFOLDING_POLICY.md`；
-7. `docs/STANDARD_PERIOD_AND_EXTENSION_POLICY.md`；
-8. `docs/CHALLENGE_POOL_SYSTEM_V1.md`；
-9. `docs/TEACHER_DELIVERY_PLAYBOOK_V0.1.md`；
-10. `courses/shared/M1_M2_INTERNAL_WALKTHROUGH_PACK_V0.1.md`；
-11. `courses/shared/CLASSROOM_CARDS_V0.1.md`；
-12. `courses/shared/TEACHER_TRAINING_AND_CERTIFICATION_V0.1.md`；
-13. `courses/shared/SCHOOL_LAUNCH_PACKAGE_V0.1.md`；
-14. `courses/shared/REAL_CLASSROOM_ITERATION_FORM_V0.1.md`；
-15. `mother-templates/README.md` 与各正式母版；
-16. `mother-templates/M1-game/RULE_LAB_PRESET_COMBINATIONS_V0.1.md`；
-17. `docs/MOTHER_TEMPLATE_PRODUCTIZATION_SPEC_V0.1.md`；
-18. `docs/MOTHER_TEMPLATE_VALIDATION_PROTOCOL_V1.md`；
-19. `docs/MOTHER_TEMPLATE_M3_M4_M5_RUN_CARDS.md`；
-20. `docs/CURRICULUM_RND_AND_SCHOOL_LAUNCH_STRATEGY.md`；
-21. `docs/CURRICULUM_DESIGN_EVIDENCE_SYNTHESIS_V1.md`；
-22. `docs/CURRICULUM_REVERSE_ENGINEERING_CASE_MATRIX_V1.md`；
-23. `docs/DECISIONS.md`；
-24. 微信小程序教育平台 T1/T2 真实账号结果；
-25. 各 `courses/<course>/` 最新产物。
+2. `HANDOFF.md`；
+3. `docs/PROJECT_EVOLUTION_AND_RATIONALE_2026-09-17.md`；
+4. `README.md`；
+5. `docs/CURRICULUM_IMPLEMENTATION_STATUS_2026-09-01.md`；
+6. `docs/INTERNAL_WALKTHROUGH_AUDIT_V0.1.md`；
+7. `docs/CROSS_LESSON_COHERENCE_AUDIT_V0.1.md`；
+8. `docs/OUTCOME_FIRST_AND_SCAFFOLDING_POLICY.md`；
+9. `docs/STANDARD_PERIOD_AND_EXTENSION_POLICY.md`；
+10. `docs/CHALLENGE_POOL_SYSTEM_V1.md`；
+11. `docs/TEACHER_DELIVERY_PLAYBOOK_V0.1.md`；
+12. `courses/shared/M1_M2_INTERNAL_WALKTHROUGH_PACK_V0.1.md`；
+13. `courses/shared/CLASSROOM_CARDS_V0.1.md`；
+14. `courses/shared/TEACHER_TRAINING_AND_CERTIFICATION_V0.1.md`；
+15. `courses/shared/SCHOOL_LAUNCH_PACKAGE_V0.1.md`；
+16. `courses/shared/REAL_CLASSROOM_ITERATION_FORM_V0.1.md`；
+17. `mother-templates/README.md` 与各正式母版；
+18. `mother-templates/M1-game/RULE_LAB_PRESET_COMBINATIONS_V0.1.md`；
+19. `docs/MOTHER_TEMPLATE_PRODUCTIZATION_SPEC_V0.1.md`；
+20. `docs/MOTHER_TEMPLATE_VALIDATION_PROTOCOL_V1.md`；
+21. `docs/MOTHER_TEMPLATE_M3_M4_M5_RUN_CARDS.md`；
+22. `docs/CURRICULUM_RND_AND_SCHOOL_LAUNCH_STRATEGY.md`；
+23. `docs/CURRICULUM_DESIGN_EVIDENCE_SYNTHESIS_V1.md`；
+24. `docs/CURRICULUM_REVERSE_ENGINEERING_CASE_MATRIX_V1.md`；
+25. `docs/DECISIONS.md`；
+26. 微信小程序教育平台 T1/T2 真实账号结果；
+27. `courses/demo/PRINCIPAL_SALES_DEMO_VIDEO_V0.1.md`；
+28. 各 `courses/<course>/` 最新产物。
 
 聊天记录只能补背景，不能覆盖仓库事实。
 
@@ -161,6 +181,8 @@ T2：`STRONG PASS`
 
 > **不要重新泛搜秒哒/扣子/WorkBuddy，也不要重复证明微信平台能不能生成应用。**
 
+T1/T2 是成人用户真实账号验证，不得写成真实五年级学生已完成。
+
 ---
 
 ## 7. Rule Lab 当前安全路径
@@ -202,9 +224,15 @@ T2：`STRONG PASS`
 
 ## 9. 当前课程主版本
 
-### Wow Demo
+### 现场 Wow Demo
 
 `courses/demo/WECHAT_WOW_DEMO_V0.2_STANDARD_PERIOD.md`
+
+### 校长销售 Demo 视频
+
+`courses/demo/PRINCIPAL_SALES_DEMO_VIDEO_V0.1.md`
+
+注意：两者不是同一个产品。现场 Demo 是真实学生上课；销售视频是动态PPT式讲解 + 少量真实成果录屏，不是课堂录像。
 
 ### 小学高年级
 
@@ -353,23 +381,27 @@ Pair：
 
 ---
 
-## 15. 当前下一执行（必须以此为准）
+## 15. 当前下一执行
 
-当前阶段：
+当前工程/课程阶段仍为：
 
 > **P0 INTERNAL AUDIT COMPLETE → M1/M2 REAL WALKTHROUGH → M3/M4/M5 MINIMAL VALIDATION → SCHOOL DELIVERY**
 
-1. **不要再做新的泛研究或平台横评。**
-2. P0 内部走课审核修正已完成，不重新打开已关闭问题。
-3. 使用 `courses/shared/M1_M2_INTERNAL_WALKTHROUGH_PACK_V0.1.md` 做教师真实内部走课，记录：第一版时间、BASE时间、Fallback、AI修复、教师负担。
-4. RL-03/04/05 若要进入基础路径，先分别做一次真实账号验证；否则保持 Challenge 候选。
-5. 有空时按 `docs/MOTHER_TEMPLATE_M3_M4_M5_RUN_CARDS.md` 各跑一次 M3/M4/M5。
-6. M3/M4/M5 通过后立即产品化并补齐被阻塞课次。
+基准列表：
+
+1. 不再做无目的泛平台横评。
+2. P0 内部走课审核修正已完成，不在无新证据时重新打开。
+3. 使用 `courses/shared/M1_M2_INTERNAL_WALKTHROUGH_PACK_V0.1.md` 做教师真实内部走课，记录第一版时间、BASE时间、Fallback、AI修复、教师负担。
+4. RL-03/04/05 若要进入基础路径，先分别真实验证；否则保持 Challenge 候选。
+5. 按 `docs/MOTHER_TEMPLATE_M3_M4_M5_RUN_CARDS.md` 各跑一次 M3/M4/M5。
+6. M3/M4/M5 通过后产品化并补齐被阻塞课次。
 7. 完成小学/初中整学期内部走课。
 8. 教师完成课程线培训/认证。
-9. 达到 School Launch Package Gate 后直接进入合作学校。
+9. 达到 School Launch Package Gate 后进入合作学校。
 10. 用真实课堂数据版本化迭代。
 11. 不新增无必要的前置实验门槛。
+
+**但用户已说明下一会话会有“情况变化”。因此下一会话必须先读取新情况，再判断上述顺序哪些需要调整，不能机械执行旧列表。**
 
 ---
 
@@ -378,6 +410,12 @@ Pair：
 不采用“一次性卖教案”。方向：
 
 > **年度/学期授权 + 教师认证 + 班级激活 + 学生作品/学校成果体系 + 持续课程更新。**
+
+当前交付链：
+
+> **课程开发方 → 代理商/区域伙伴 → 学校 → 代理商受训教师到校上课 → 学生。**
+
+因此校长销售材料不需要重点证明“学校自己的老师是否能教”；教师可培训性属于代理商后台交付能力。
 
 代理商获得当前授权执行层，不默认获得完整研发母版、失败库、内部 Prompt 迭代历史和下一版本计划。
 
@@ -390,3 +428,86 @@ Pair：
 - 真实课堂数据；
 - 学生作品/学校成果；
 - 持续更新。
+
+---
+
+## 17. Demo / 校长销售材料当前硬结论
+
+必须区分：
+
+### 学生现场 Demo
+
+真实学生上课，当前稳定主任务优先 M1 游戏；M2及后续产品展示能力上限。
+
+### 校长销售 Demo 视频
+
+不是课堂录像。
+
+> **动态PPT式讲解 + 少量真实成果录屏。**
+
+原则：
+
+> **录制结果，讲解过程，抽象方法，保护配方。**
+
+不展示完整母 Prompt / Recovery / 从空白生成全过程。
+
+销售主视觉不应只有小游戏，应突出学习平台、知识产品、真实工具等“像真正软件”的成果。
+
+专业术语适量、只用中文。第一版重点：
+
+- 需求定义；
+- 系统逻辑；
+- 测试与调试；
+- AI能力边界/人的判断。
+
+每个术语采用：
+
+> **专业词 + 一句直观解释 + 一句传统开发中的对应关系。**
+
+权威背书只短暂使用世界经济论坛2025未来技能和联合国教科文组织学生AI能力框架，不在短视频里扩展成完整理论体系。
+
+完整制作说明：`courses/demo/PRINCIPAL_SALES_DEMO_VIDEO_V0.1.md`
+
+---
+
+## 18. 平台认证/班级问题当前边界
+
+微信小程序教育平台的以下问题仍是 OPEN：
+
+- 创建班级是否要求认证；
+- 平台内部认证是否仅学校主体可完成；
+- 非学校教育机构是否存在可核验认证路径；
+- 代理商服务多校时的权限/账号结构。
+
+目前公开二手资料有“未认证也可先开展教学/默认学生账号”等说法，但不足以替代最新官方/真实账号验证。
+
+不要把普通微信小程序的企业/教育类目认证规则直接套用到教育平台内部学校认证。
+
+---
+
+## 19. 维护要求
+
+任何重要新讨论只要改变：
+
+- 产品定位；
+- 课程结构；
+- 工具路线；
+- 实测证据；
+- Demo策略；
+- 商业交付；
+- 销售表达；
+- 强约束；
+- 当前下一步；
+
+都必须写回 Repo。
+
+至少判断是否需要同步：
+
+- `HANDOFF.md`；
+- `docs/PROJECT_EVOLUTION_AND_RATIONALE_2026-09-17.md` 或其后继版本；
+- 对应专题文件；
+- 当前 implementation/status 文件。
+
+最终目标：
+
+> **任何能访问 Repo 的人或 Agent，都能只靠仓库恢复事实、理解理由并继续工作。**
