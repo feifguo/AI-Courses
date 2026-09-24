@@ -149,3 +149,43 @@ main 基线：`92600cf9c4bb8fa0172e77fca36d0471341bfd0b`
 2. 四节教师整合页的目标教师走课结果。
 
 这两个结果可以并行回来，互不等待。
+
+
+---
+
+## 追加进展：共用教学 / 运营资产已落地
+
+本轮继续完成：
+
+### 事实核查
+- 新增：`internal-delivery/materials/fact-check/FACT_CHECK_SOURCE_PACK_V0.1.md`
+- 已接入：小学 L12、初中 L10
+- 教师不再需要临场搜索来源
+
+### 展示与发布
+- 新增：`internal-delivery/materials/showcase/SHOWCASE_RELEASE_TEMPLATE_PACK_V0.1.md`
+- 已接入：小学 L15/L16、初中 L15/L16
+- 包含作品卡、二维码作品墙、最佳截图、Before/After、30秒/60秒发布、Demo Day 摊位卡
+
+### 教师开课运营
+- 新增：`internal-delivery/operations/PRECLASS_TEACHER_CHECKLIST_V0.1.md`
+- 新增：`internal-delivery/operations/PLATFORM_INCIDENT_EMERGENCY_SOP_V0.1.md`
+
+平台故障策略已经落实为：
+
+> 教师正常情况下不能自行下载教案；真正影响授课时，由课程方人工授权“仅当前课”的带水印应急材料。
+
+### 平台权限
+- 新增：`docs/WECHAT_MINIPROGRAM_EDU_SCHOOL_ACCOUNT_PERMISSION_RECHECK_2026-09-25.md`
+- 当前：单校教学路径证据较强
+- 当前：代理商多校集中管理仍未验证
+- 正式多校商业交付前，需完成文档中的12步当前真实 UI 核验
+
+## 当前真正阻塞批量复制的外部证据
+
+只剩：
+
+1. 四节教师整合页的人类目标教师走课；
+2. M3/M4/M5 真实账号验证。
+
+在此之前，可以继续做共用资产与系统接口，但不建议把剩余21节教师页和32套最终课件一次性批量生产。
