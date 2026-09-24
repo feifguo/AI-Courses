@@ -1,5 +1,38 @@
 # AI-Courses 课程交付资料总入口
 
+> **2026-09-25 最新执行状态提示：本页下方部分早期“待补”描述正在逐步被本段更新。当前已完成的新增资产如下。**
+
+## 当前已经实际完成
+
+- V0.4 “先同构，后分化；先完成，后创造”课程结构候选；
+- 四节教师整合页样板：小学 L1/L15、初中 L3/L9；
+- 四节样板结构 QA 与人类走课包；
+- M3/M4/M5 三条独立真实账号验证任务；
+- 事实核查来源包 V0.1，并已接入小学 L12 / 初中 L10；
+- 展示与发布模板包 V0.1，并已接入小学/初中 L15/L16；
+- 教师课前10分钟检查表 V0.1；
+- 平台故障“课程方人工授权当前课”应急 SOP V0.1；
+- Teacher Portal 单课内容接口与访问控制候选；
+- 微信小程序教育平台学校账号 / 多校权限最新公开证据复核。
+
+对应入口：
+
+- `internal-delivery/teacher-source/`
+- `internal-delivery/materials/fact-check/FACT_CHECK_SOURCE_PACK_V0.1.md`
+- `internal-delivery/materials/showcase/SHOWCASE_RELEASE_TEMPLATE_PACK_V0.1.md`
+- `internal-delivery/operations/PRECLASS_TEACHER_CHECKLIST_V0.1.md`
+- `internal-delivery/operations/PLATFORM_INCIDENT_EMERGENCY_SOP_V0.1.md`
+- `docs/WECHAT_MINIPROGRAM_EDU_SCHOOL_ACCOUNT_PERMISSION_RECHECK_2026-09-25.md`
+
+## 当前真正的两个外部 Gate
+
+1. **四节教师整合页的人类目标教师走课**；
+2. **M3/M4/M5 真实账号验证**。
+
+在这两个 Gate 前，不建议把剩余21节教师页和32套最终 PPT 机械批量复制；但共用资产、平台权限核验、课程控制层可以继续推进。
+
+---
+
 状态：DELIVERY MAP DRAFT  
 用途：给课程负责人、代理商负责人、培训师和授课老师快速找到“现在有哪些资料、在哪里、什么时候用”。
 
