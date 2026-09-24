@@ -1,6 +1,6 @@
 # 小学高年级 L15 — 产品测试与发布 V0.1
 
-更新时间：2026-09-01
+更新时间：2026-09-25
 状态：READY FOR INTERNAL WALKTHROUGH
 年级：4–6年级
 标准课时：40分钟
@@ -206,6 +206,14 @@
 ---
 
 ## 8. 学生发布检查卡
+
+通用发布模板与最佳截图规范统一使用：
+
+`../../../internal-delivery/materials/showcase/SHOWCASE_RELEASE_TEMPLATE_PACK_V0.1.md`
+
+本节只调用其中“课堂发布检查 + 最佳截图 + 一句话介绍”部分。
+
+
 
 ### A. 打得开
 - [ ] 首页正常
